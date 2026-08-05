@@ -7,7 +7,7 @@ function Details() {
 
     useEffect(()=>{
     async function getMovie(){
-        const res = await fetch(`http://www.omdbapi.com/?apikey=4cd272a&i=${id}`)
+        const res = await fetch(`https://www.omdbapi.com/?apikey=4cd272a&i=${id}`)
         const data = await res.json();
         if(data.Response === "False"){
             setMovie({ error: data.Error })
