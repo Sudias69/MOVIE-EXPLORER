@@ -8,13 +8,16 @@ function App() {
  
 
   return (
-    <Router>
+    <div>
+      <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/movie/:id" element={<Details />} />
       </Routes>
     </Router>
+    <Router basename="/MOVIE-EXPLORER"></Router>
+    </div>
   )
 }
 
